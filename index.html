@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for social media icons -->
+    
+       
+</head>
+<body>
+    <!-- Game area -->
+    <div class="game-area">
+        <h1>Dice Game<i class="fa-solid fa-dice-six"></i>
+        </h1>
+        <p>Increment boxes</p>
+
+        <!-- Display win and lose counts -->
+        <div class="counter">
+            <div>Wins: <span id="win-count">0</span></div>
+            <div>Losses: <span id="lose-count">0</span></div>
+        </div>
+
+        <!-- Answer input box -->
+        <input type="number" id="answer-box" placeholder="Enter your guess (2-12)">
+
+        <!-- Button to roll the dice -->
+        <button onclick="runGame()">Roll Dice</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

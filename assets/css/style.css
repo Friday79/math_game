@@ -1,0 +1,108 @@
+/* Import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/* Asterisk wildcard selector to override the default function */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+} 
+ /* Base Styles */
+ body {
+    font-family: lato, sans-serif;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-area {
+    background-color:#ccc;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align:center;
+    width: 90%; /* Use 90% width for responsiveness */
+    max-width: 400px; /* Max width for larger screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h1 {
+    color: #3a3a3a;
+    margin-bottom: 18px;
+    font-size: 2.2rem; /* Responsive font size */
+}
+
+p {
+    font-size: 1.5rem; /* Responsive font size */
+    color: #333;
+    margin: 10px 0;
+}
+
+#answer-box {
+    width: 100%; /* Full width on all devices */
+    padding: 10px;
+    font-size: 1rem; /* Responsive font size */
+    margin: 5px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem; /* Responsive font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button for smaller screens */
+    max-width: 200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center button horizontally */
+    display: block; /* Block display for full width */
+}
+
+button:hover {
+    background-color: #92a045;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.counter div {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem; /* Responsive font size */
+    color: #333;
+    width: 100px;
+    text-align: center;
+    flex-grow: 1; /* Allow divs to grow equally */
+    margin: 0 5px; /* Add margin for spacing */
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 480px) {
+    .game-area {
+        padding: 15px; /* Reduce padding for small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    p, .counter div {
+        font-size: 1rem; /* Smaller font size for small screens */
+    }
+
+    button {
+        padding: 8px 16px; /* Reduce button padding for small screens */
+    }
+}
