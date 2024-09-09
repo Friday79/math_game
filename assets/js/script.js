@@ -1,8 +1,20 @@
-
+//add eventlistener to the dom
+document.addEventListener("DOMContentLoaded", function () {
+  buttons = this.getElementsByTagName("button");
+  for(let button of buttons){
+    button.addEventListener("click", function(){
+      if(this.getAttribute("onclick") === "roll dice"){
+        alert("you click roll dice!")
+      }else{
+        let gametype=this.getAttribute("onclick");
+        alert("you clicked ${gametype}!");
+      }
+    })
+}})
 let countdown;
 function runGame() {
     //timer
-    startTimer(10);
+    startTimer(1000);
     // Get the user's guess from the input box
     let userAnswer = parseInt(document.getElementById("answer-box").value);
 
