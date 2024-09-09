@@ -9,6 +9,7 @@
 } 
  /* Base Styles */
  body {
+    
     font-family: lato, sans-serif;
     background-color:black;
     display: flex;
