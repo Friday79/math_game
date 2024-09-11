@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let countdown;
 function runGame() {
-    //timer
-    startTimer(1000);
     // Get the user's guess from the input box
     let userAnswer = parseInt(document.getElementById("answer-box").value);
 
@@ -56,19 +54,9 @@ function incrementLose() {
     let loseCount = parseInt(document.getElementById("lose-count").textContent);
 
     // Increment the lose count
-    document.getElementById("lose-count").textContent = ++loseCount;
+    document.getElementById("lose-count").innerHTML = ++loseCount;
 }
-// Function to display the current time
-function showTime() {
-    // Get the current date and time
-    let now = new Date();
-    
-    // Format the time as a string (e.g., "12:34:56 PM")
-    let timeString = now.toLocaleTimeString();
-    
-    // Display the time in an alert box (or you could display it on the page)
-    ("Current Time: " + timeString);
-}
+
 function answerBox() {
     // Clear the input box
     document.getElementById("answer-box").value = "";
