@@ -1,16 +1,10 @@
 //add eventlistener to the dom
 document.addEventListener("DOMContentLoaded", function () {
-  buttons = this.getElementsByTagName("button");
-  for(let button of buttons){
-    button.addEventListener("click", function(){
-      if(this.getAttribute("onclick") === "roll dice"){
-        alert("you click roll dice!")
-      }else{
-        let gametype=this.getAttribute("onclick");
-        alert("you clicked ${gametype}!");
-      }
-    })
-}})
+ let buttons = this.getElementsByTagName("button");
+    button.addEventListener("click",runGame).innerHTML =<p>start runGame</p>; 
+      
+  })
+
 let countdown;
 function runGame() {
     //timer
@@ -27,27 +21,6 @@ function runGame() {
     // Clear the answer box for the next round
     answerBox();
 }
-// Function to start the timer
-function startTimer(seconds) {
-    let timeLeft = seconds;
-    
-    countdown = setInterval(function() {
-      if (timeLeft <= 0) {
-        clearInterval(countdown);
-        incrementLose();
-        alert("Time's up! You didn't answer in time.");
-        runGame(); // Restart the game
-      } else {
-        console.log(`Time left: ${timeLeft} seconds`); // Display the countdown in the console
-        timeLeft--;
-      }
-    }, 1000);
-  }
-  
-  // Event listener to start the game when the button is clicked
-  document.getElementById("start-game-button").addEventListener("click", function() {
-    runGame();
-  });
 
 function addition() {
     // Generate random numbers for two dice (1-6)
@@ -62,20 +35,20 @@ function calculate(userAnswer, diceSum) {
     if (userAnswer === diceSum) {
         // If guess is correct, increment win count
         incrementWin();
-        alert("Correct! The sum was " + diceSum);
+        ("Correct! The sum was " + diceSum);
     } else {
         // If guess is incorrect, increment lose count
         incrementLose();
-        alert("Incorrect! The sum was " + diceSum);
+        ("Incorrect! The sum was " + diceSum);
     }
 }
 
 function incrementWin() {
     // Get the current win count from the DOM
-    let winCount = parseInt(document.getElementById("win-count").textContent);
+    let winCount = parseInt(document.getElementById("win-count").innerHTML);
     
     // Increment the win count
-    document.getElementById("win-count").textContent = ++winCount;
+    document.getElementById("win-count").innerHTML = ++winCount;
 }
 
 function incrementLose() {
@@ -94,12 +67,8 @@ function showTime() {
     let timeString = now.toLocaleTimeString();
     
     // Display the time in an alert box (or you could display it on the page)
-    alert("Current Time: " + timeString);
+    ("Current Time: " + timeString);
 }
-
-// Adding an event listener to the button to show time on click
-document.getElementById("time-button").addEventListener("click", showTime);
-
 function answerBox() {
     // Clear the input box
     document.getElementById("answer-box").value = "";
