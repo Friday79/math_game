@@ -1,7 +1,7 @@
 //add eventlistener to the dom
 document.addEventListener("DOMContentLoaded", function () {
  let buttons = this.getElementsByTagName("button");
-    button.addEventListener("click",runGame).innerHTML =<p>start runGame</p>; 
+    button.addEventListener("click",runGame).innerHTML ="start runGame" ; 
       
   })
 
@@ -28,16 +28,15 @@ function addition() {
     // Return the sum of the two dice
     return dice1 + dice2;
 }
-
+ // If guess is correct, increment win count
 function calculate(userAnswer, diceSum) {
     if (userAnswer === diceSum) {
-        // If guess is correct, increment win count
         incrementWin();
-        ("Correct! The sum was " + diceSum);
+       diceSum.HTML= "Correct! The sum was " ;
     } else {
         // If guess is incorrect, increment lose count
         incrementLose();
-        ("Incorrect! The sum was " + diceSum);
+        diceSum.HTML="Incorrect! The sum was ";
     }
 }
 
@@ -51,8 +50,8 @@ function incrementWin() {
 
 function incrementLose() {
     // Get the current lose count from the DOM
-    let loseCount = parseInt(document.getElementById("lose-count").textContent);
-
+    let loseCount = parseInt(document.getElementById("lose-count").innerHTML;
+ 
     // Increment the lose count
     document.getElementById("lose-count").innerHTML = ++loseCount;
 }
