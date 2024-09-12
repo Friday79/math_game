@@ -1,11 +1,21 @@
 //add eventlistener to the dom
 document.addEventListener("DOMContentLoaded", function () {
- let buttons = this.getElementsByTagName("button");
-    button.addEventListener("click",runGame).innerHTML ="start runGame" ; 
-      
-  })
+let  buttons = this.getElementsByTagName("button");
+ for(let button of buttons) {
+    button.addEventListener("click",function() {
+         if (this.innerHTML === "roll dice") {
+         this.innerHTML=
+            "you clicked roll dice!";
+          } else {
+        
+            `you clicked`;
+                  }
+    
+        
+});
+ }
+});
 
-let countdown;
 function runGame() {
     // Get the user's guess from the input box
     let userAnswer = parseInt(document.getElementById("answer-box").value);
@@ -32,11 +42,11 @@ function addition() {
 function calculate(userAnswer, diceSum) {
     if (userAnswer === diceSum) {
         incrementWin();
-       diceSum.HTML= "Correct! The sum was " ;
+       calculate.innerHTML= "Correct! The sum is ${diceSum}" ;
     } else {
         // If guess is incorrect, increment lose count
         incrementLose();
-        diceSum.HTML="Incorrect! The sum was ";
+        calculate.innerHTML="Incorrect! The sum is ${diceSum}";
     }
 }
 
@@ -50,13 +60,13 @@ function incrementWin() {
 
 function incrementLose() {
     // Get the current lose count from the DOM
-    let loseCount = parseInt(document.getElementById("lose-count").innerHTML;
+    let loseCount = parseInt(document.getElementById("lose-count").innerHTML);
  
     // Increment the lose count
     document.getElementById("lose-count").innerHTML = ++loseCount;
 }
 
-function answerBox() {
+function answerBox(){ 
     // Clear the input box
     document.getElementById("answer-box").value = "";
 }
