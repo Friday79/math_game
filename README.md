@@ -61,6 +61,11 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 + The live link:[Math_Game]( https://friday79.github.io/math_game/)
 
+  ## Credit
+
+  - Credit to my mentor who was helpful to me
+
+  - Credit to love_math project
   
 
 
