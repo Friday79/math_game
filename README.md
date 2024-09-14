@@ -27,3 +27,5 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ![image](https://github.com/user-attachments/assets/d40ac879-3d1d-4736-923c-e0540a34100d)
 
+## css validator W3c
+
