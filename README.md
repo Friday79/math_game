@@ -29,3 +29,29 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ## css validator W3c
 
+![image](https://github.com/user-attachments/assets/574818ba-11ee-425c-8433-f8e5bc83f702)
+
+## Language use
+
+- HTML
+- CSS
+- JS
+
+  ### Version use
+  The version use was github, with Repo name of Dice_Game
+
+  ## Deployment
+
+  The site was deployed to Github pages as follows:
+
++ In the Github repository, I navigated to Settings tab.
+ 
++ From the source section drop-down menu, I selected the main and Save
+
++ Once the main was selected, the page provided the link to the website
+
+  
+
+
+  
+  
