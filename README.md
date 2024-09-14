@@ -38,7 +38,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 - JS
 
   ### Version use
-  The version use was gitpod which was then push to github repository, with Repo name of Dice_Game
+  The version use was gitpod which was then push to github repository, with Repo name of Math_Game
 
 
   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
@@ -59,7 +59,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 + Once the main was selected, the page provided the link to the website
 
-+ The live link:[Dice_Game]( https://friday79.github.io/math_game/)
++ The live link:[Math_Game]( https://friday79.github.io/math_game/)
 
   
 
