@@ -16,6 +16,12 @@ let  buttons = this.getElementsByTagName("button");
  }
 });
 
+/**
+ * Function to run the game logic.
+ * It gets the user's guess from the input box and rolls the dice.
+ * Then, it compares the user's guess to the dice roll result and calculates wins or losses.
+ * Finally, it clears the input box for the next round.
+ */
 function runGame() {
     // Get the user's guess from the input box
     let userAnswer = parseInt(document.getElementById("answer-box").value);
@@ -49,7 +55,11 @@ function calculate(userAnswer, diceSum) {
         calculate.innerHTML="Incorrect! The sum is ${diceSum}";
     }
 }
-
+/**
+ * Function to increment the win count.
+ * Retrieves the current win count from the DOM and increments it by 1.
+ * Updates the win count in the DOM.
+ */
 function incrementWin() {
     // Get the current win count from the DOM
     let winCount = parseInt(document.getElementById("win-count").innerHTML);
