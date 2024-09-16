@@ -38,9 +38,12 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 - JS
 
   ### Version use
-  The version use was gitpod which was then push to github repository, with Repo name of Math_Game
+  The version use was gitpod which was then push to github repository, with Repo name of friday79/Math_Game
 
+  Font Google was use to inport font to the css
 
+  font awesome was use to inport icon to the site
+  
   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
 
 1. git add . to add the files to the staging area before being committed.
