@@ -57,6 +57,10 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 3. git push  to push all committed code to the remote repository on Github.
 
+# testing 
+
+I tested the game and it run good
+
   ## Deployment
 
   The site was deployed to Github pages as follows:
