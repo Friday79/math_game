@@ -43,7 +43,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 - JS
 
   ### Version use
-  The version use was gitpod which was then push to github repository, with Repo name of friday79/Math_Game
+  The version use was gitpod editor which was then push to github remote repository, with Repo name of friday79/Math_Game
 
   Font Google was use to inport font to the css
 
