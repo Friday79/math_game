@@ -33,7 +33,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ## jshint validator
 
-![image](https://github.com/user-attachments/assets/b619655e-6ff3-453c-b3bc-fb395ec26376)
+![image](https://github.com/user-attachments/assets/33581d27-087e-4408-8294-cf4d60d2f4c7)
 
 
 ## Language use
