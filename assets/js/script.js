@@ -1,14 +1,14 @@
 //add eventlistener to the dom
 document.addEventListener("DOMContentLoaded", function () {
-let  buttons = this.getElementsByTagName("button");
- for(let button of buttons) {
-    button.addEventListener("click",function() {
+var  buttons = this.getElementsByTagName("button");
+ for(var i = 0; i < buttons.length; i++) {
+    button[i].addEventListener("click",function() {
          if (this.innerHTML === "roll dice") {
          this.innerHTML=
             "you clicked roll dice!";
           } else {
         
-            `you clicked`;
+            "you clicked fail";
                   }
     
         
