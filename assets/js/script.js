@@ -49,8 +49,8 @@ function runGame() {
 
 function addition() {
     // Generate random numbers for two dice (1-6)
-    let dice1 = Math.floor(Math.random() * 6) + 1;
-    let dice2 = Math.floor(Math.random() * 6) + 1;
+    var dice1 = Math.floor(Math.random() * 6) + 1;
+    var dice2 = Math.floor(Math.random() * 6) + 1;
 
     // Return the sum of the two dice
     return dice1 + dice2;
@@ -73,7 +73,7 @@ function calculate(userAnswer, diceSum) {
  */
 function incrementWin() {
     // Get the current win count from the DOM
-    let winCount = parseInt(document.getElementById("win-count").innerHTML);
+    var winCount = parseInt(document.getElementById("win-count").innerHTML);
     
     // Increment the win count
     document.getElementById("win-count").innerHTML = ++winCount;
@@ -81,7 +81,7 @@ function incrementWin() {
 
 function incrementLose() {
     // Get the current lose count from the DOM
-    let loseCount = parseInt(document.getElementById("lose-count").innerHTML);
+    var loseCount = parseInt(document.getElementById("lose-count").innerHTML);
  
     // Increment the lose count
     document.getElementById("lose-count").innerHTML = ++loseCount;
@@ -91,3 +91,23 @@ function answerBox(){
     // Clear the input box
     document.getElementById("answer-box").value = "";
 }
+
+/**
+ * Function to enable the roll dice button once the user inputs a valid number.
+ */
+function enableDiceButtons() {
+    var buttons = document.getElementsByTagName("button");
+    for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].innerHTML === "roll dice") {
+            buttons[i].disabled = false; // Enable roll dice button
+        }
+    }
+}
+
+// Optional: Add an event listener to check input validity on keyup
+document.getElementById("answer-box").addEventListener("keyup", function() {
+    var input = document.getElementById("answer-box").value;
+    if (input !== "" && !isNaN(input)) {
+        enableDiceButtons(); // Enable buttons if input is valid
+    }
+});
