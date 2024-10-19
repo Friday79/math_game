@@ -29,8 +29,8 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ## css validator W3c
 
+![image](https://github.com/user-attachments/assets/aeed77f0-a2f1-4477-9452-94b60b612343)
 
-![image](https://github.com/user-attachments/assets/574818ba-11ee-425c-8433-f8e5bc83f702)
 
 ## jshint validator
 
