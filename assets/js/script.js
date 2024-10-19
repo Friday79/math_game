@@ -24,10 +24,21 @@ var  buttons = this.getElementsByTagName("button");
  */
 function runGame() {
     // Get the user's guess from the input box
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    var userAnswer = (document.getElementById("answer-box").value);
+
+     // Check if the input is empty or not a valid number
+     if (userAnswer === "" || isNaN(userAnswer)) {
+        alert("Please enter a valid number.");
+        // Disable the roll dice functionality
+        disableDiceButtons();
+        return;
+    }
+
+    // Convert userAnswer to a number
+    userAnswer = parseInt(userAnswer);
 
     // Get the dice roll sum from the addition function
-    let diceSum = addition();
+    var diceSum = addition();
 
     // Calculate the result and update win or lose counts
     calculate(userAnswer, diceSum);
