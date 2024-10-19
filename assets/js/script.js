@@ -26,9 +26,9 @@ function runGame() {
     // Get the user's guess from the input box
     var userAnswer = (document.getElementById("answer-box").value);
 
-     // Check if the input is empty or not a valid number
-     if (userAnswer === "" || isNaN(userAnswer)) {
-        alert("Please enter a valid number.");
+     // Check if the input is empty or not a valid number between 2 and 12
+     if (userAnswer === "" || isNaN(userAnswer)|| userAnswer < 2 || userAnswer > 12) {
+        alert("Please enter a valid number between 2 and 12!.");
         // Disable the roll dice functionality
         disableDiceButtons();
         return;
