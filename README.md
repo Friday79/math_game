@@ -59,6 +59,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 # testing 
 
+
 I tested the game and it run good
 ## UX Design
 #Overview
@@ -71,13 +72,19 @@ The User Experience (UX) design of this application focuses on providing a seaml
 - Visual Hierarchy: Use proper contrast and alignment to emphasize important elements like the dice roll button, result feedback, and the win/loss counters.
 - Responsiveness: Design with a mobile-first approach to ensure that the game is playable across devices, especially on smaller screens.
 
--User Flow
+## User Flow
 1 The user is greeted with an input field and a button to roll the dice.
+
 2 They are prompted to enter a guess.
+
 3 Upon submitting, the app checks for a valid number.
+
 4 If the input is valid, the user can roll the dice and see the results.
+
 5 Feedback is immediately displayed, updating the win/loss counts.
+
 6 The input is cleared for the next round.
+
 
   ## Deployment
 
