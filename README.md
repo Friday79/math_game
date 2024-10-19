@@ -43,13 +43,15 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 - JS
 
   ### Version use
-  The version use was gitpod editor which was then push to github remote repository, with Repo name of friday79/Math_Game
+  * The version use was gitpod editor which was then push to github remote repository, with Repo name of friday79/Math_Game
 
-  Font Google was use to inport font to the css
+  * Font Google was use to inport font to the css
 
-  font awesome was use to inport icon to the site
+  * font awesome was use to inport icon to the site
+
+  * Draw.io - Used to create flowchart for the coffee machine
   
-  Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
+  * Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
 
 1. git add . to add the files to the staging area before being committed.
 
@@ -59,6 +61,7 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 # testing 
 
+![image](https://github.com/user-attachments/assets/9ee19bab-a421-4016-8125-c71a2293624b)
 
 I tested the game and it run good
 ## UX Design
