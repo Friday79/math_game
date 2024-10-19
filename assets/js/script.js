@@ -59,11 +59,11 @@ function addition() {
 function calculate(userAnswer, diceSum) {
     if (userAnswer === diceSum) {
         incrementWin();
-       calculate.innerHTML= "Correct! The sum is ${diceSum}" ;
+        alert("Correct! The sum is" + diceSum) ;
     } else {
         // If guess is incorrect, increment lose count
         incrementLose();
-        calculate.innerHTML="Incorrect! The sum is ${diceSum}";
+        alert("Incorrect! The sum is" + diceSum);
     }
 }
 /**
