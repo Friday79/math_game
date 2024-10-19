@@ -63,6 +63,8 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ![image](https://github.com/user-attachments/assets/9ee19bab-a421-4016-8125-c71a2293624b)
 
+![image](https://github.com/user-attachments/assets/ab5e3c93-1db4-45ad-a552-cd720560a395)
+
 I tested the game and it run good
 ## UX Design
 #Overview
