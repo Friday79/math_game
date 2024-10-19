@@ -34,7 +34,8 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 ## jshint validator
 
-![image](https://github.com/user-attachments/assets/33581d27-087e-4408-8294-cf4d60d2f4c7)
+![image](https://github.com/user-attachments/assets/e58da13e-3faf-4e2f-b2bc-803b17c1fa02)
+
 
 
 ## Language use
@@ -71,8 +72,12 @@ If the number you chose is not the same as the Sum dice, the you lose, and your 
 
 I tested the game and it run good
 
+## BUG
+
+- NO BUG
+
 ## UX Design
-#Overview
+# Overview
 The User Experience (UX) design of this application focuses on providing a seamless and intuitive interface for users interacting with the dice game. The goal is to ensure that users can quickly understand how to play the game, input their guesses, and receive feedback in a clear and engaging manner.
 
 ## Design Goals
