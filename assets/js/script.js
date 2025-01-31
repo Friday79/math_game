@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 var  buttons = this.getElementsByTagName("button");
  for(var i = 0; i < buttons.length; i++) {
-    button[i].addEventListener("click",function() {
+    buttons[i].addEventListener("click",function() {
          if (this.innerHTML === "roll dice") {
          this.innerHTML=
             "you clicked roll dice!";
@@ -104,7 +104,19 @@ function enableDiceButtons() {
     }
 }
 
-// Optional: Add an event listener to check input validity on keyup
+/**
+ * Function to disable dice roll button.
+ */
+function disableDiceButtons() {
+    var buttons = document.getElementsByTagName("button");
+    for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].innerHTML === "roll dice") {
+            buttons[i].disabled = true;
+        }
+    }
+}
+
+//  Add an event listener to check input validity on keyup
 document.getElementById("answer-box").addEventListener("keyup", function() {
     var input = document.getElementById("answer-box").value;
     if (input !== "" && !isNaN(input)) {
