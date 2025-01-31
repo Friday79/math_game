@@ -13,7 +13,7 @@
 <body>
     <!-- Game area -->
     <div class="game-area">
-        <h1>Dice Game<i class="fa-solid fa-dice-six"></i>
+        <h1>Dice Game <i class="fa-solid fa-dice-six"></i>
         </h1>
 
         <!-- Display win and lose counts -->
@@ -22,11 +22,11 @@
             <div>Losses: <span id="lose-count">0</span></div>
         </div>
         <!-- Answer input box -->
+        <label for="answer-box">Enter your guess (2-12):</label>
         <input type="number" id="answer-box" placeholder="Enter your guess (2-12)">
         <!-- Button to roll the dice -->
         <button onclick="runGame()">Roll Dice</button>
         <div id="result"></div>
-        <p id="result"></p>
     </div>
     <script src="assets/js/script.js"></script>
 </body>
