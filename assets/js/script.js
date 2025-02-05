@@ -1,19 +1,15 @@
-//add eventlistener to the dom
 document.addEventListener("DOMContentLoaded", function () {
-var  buttons = this.getElementsByTagName("button");
- for(var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click",function() {
-         if (this.innerHTML === "roll dice") {
-         this.innerHTML=
-            "you clicked roll dice!";
-          } else {
-        
-            "you clicked fail";
-                  }
+    const buttons = document.getElementsByTagName("button");
     
-        
-});
- }
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+            if (this.innerHTML === "roll dice") {
+                this.innerHTML = "you clicked roll dice!";
+            } else {
+                this.innerHTML = "you clicked fail";
+            }
+        });
+    }
 });
 
 /**
@@ -24,10 +20,10 @@ var  buttons = this.getElementsByTagName("button");
  */
 function runGame() {
     // Get the user's guess from the input box
-    var userAnswer = (document.getElementById("answer-box").value);
+    let userAnswer = document.getElementById("answer-box").value;
 
-     // Check if the input is empty or not a valid number between 2 and 12
-     if (userAnswer === "" || isNaN(userAnswer)|| userAnswer < 2 || userAnswer > 12) {
+    // Check if the input is empty or not a valid number between 2 and 12
+    if (userAnswer === "" || isNaN(userAnswer) || userAnswer < 2 || userAnswer > 12) {
         alert("Please enter a valid number between 2 and 12!.");
         // Disable the roll dice functionality
         disableDiceButtons();
@@ -38,7 +34,7 @@ function runGame() {
     userAnswer = parseInt(userAnswer);
 
     // Get the dice roll sum from the addition function
-    var diceSum = addition();
+    const diceSum = addition();
 
     // Calculate the result and update win or lose counts
     calculate(userAnswer, diceSum);
@@ -49,45 +45,45 @@ function runGame() {
 
 function addition() {
     // Generate random numbers for two dice (1-6)
-    var dice1 = Math.floor(Math.random() * 6) + 1;
-    var dice2 = Math.floor(Math.random() * 6) + 1;
+    const dice1 = Math.floor(Math.random() * 6) + 1;
+    const dice2 = Math.floor(Math.random() * 6) + 1;
 
     // Return the sum of the two dice
     return dice1 + dice2;
 }
- // If guess is correct, increment win count
+
+// If guess is correct, increment win count
 function calculate(userAnswer, diceSum) {
     if (userAnswer === diceSum) {
         incrementWin();
-        alert("Correct! The sum is" + diceSum) ;
+        alert("Correct! The sum is " + diceSum);
     } else {
         // If guess is incorrect, increment lose count
         incrementLose();
-        alert("Incorrect! The sum is" + diceSum);
+        alert("Incorrect! The sum is " + diceSum);
     }
 }
+
 /**
  * Function to increment the win count.
  * Retrieves the current win count from the DOM and increments it by 1.
  * Updates the win count in the DOM.
  */
 function incrementWin() {
-    // Get the current win count from the DOM
-    var winCount = parseInt(document.getElementById("win-count").innerHTML);
+    let winCount = parseInt(document.getElementById("win-count").innerHTML);
     
     // Increment the win count
     document.getElementById("win-count").innerHTML = ++winCount;
 }
 
 function incrementLose() {
-    // Get the current lose count from the DOM
-    var loseCount = parseInt(document.getElementById("lose-count").innerHTML);
+    let loseCount = parseInt(document.getElementById("lose-count").innerHTML);
  
     // Increment the lose count
     document.getElementById("lose-count").innerHTML = ++loseCount;
 }
 
-function answerBox(){ 
+function answerBox() { 
     // Clear the input box
     document.getElementById("answer-box").value = "";
 }
@@ -96,8 +92,8 @@ function answerBox(){
  * Function to enable the roll dice button once the user inputs a valid number.
  */
 function enableDiceButtons() {
-    var buttons = document.getElementsByTagName("button");
-    for (var i = 0; i < buttons.length; i++) {
+    const buttons = document.getElementsByTagName("button");
+    for (let i = 0; i < buttons.length; i++) {
         if (buttons[i].innerHTML === "roll dice") {
             buttons[i].disabled = false; // Enable roll dice button
         }
@@ -108,17 +104,17 @@ function enableDiceButtons() {
  * Function to disable dice roll button.
  */
 function disableDiceButtons() {
-    var buttons = document.getElementsByTagName("button");
-    for (var i = 0; i < buttons.length; i++) {
+    const buttons = document.getElementsByTagName("button");
+    for (let i = 0; i < buttons.length; i++) {
         if (buttons[i].innerHTML === "roll dice") {
             buttons[i].disabled = true;
         }
     }
 }
 
-//  Add an event listener to check input validity on keyup
+// Add an event listener to check input validity on keyup
 document.getElementById("answer-box").addEventListener("keyup", function() {
-    var input = document.getElementById("answer-box").value;
+    const input = document.getElementById("answer-box").value;
     if (input !== "" && !isNaN(input)) {
         enableDiceButtons(); // Enable buttons if input is valid
     }
